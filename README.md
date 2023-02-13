@@ -8,3 +8,7 @@ https://github.com/conal/Collaboration/blob/master/learning-agda.md
 
 Agda Book:
 https://github.com/jespercockx/agda-lecture-notes/blob/master/agda.pdf
+
+# Compiling Agda
+
+Compile command `cd src && agda --compile hello-world.agda --compile-dir=../build`
