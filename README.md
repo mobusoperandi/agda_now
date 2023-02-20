@@ -1,7 +1,7 @@
 # Learning Agda
 
 Agda Getting Started:
-https://agda.readthedocs.io/en/v2.6.0.1/getting-started/index.html
+https://agda.readthedocs.io/en/latest/
 
 Agda Learning Ressources:
 https://github.com/conal/Collaboration/blob/master/learning-agda.md
