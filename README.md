@@ -12,3 +12,5 @@ https://github.com/jespercockx/agda-lecture-notes/blob/master/agda.pdf
 # Compiling Agda
 
 Compile command `cd agda --compile hello-world.agda --compile-dir=../build`
+
+I'm a purple todder dingus
