@@ -1,4 +1,4 @@
-open import Agda.Builtin.Bool using (Bool)
+open import Agda.Builtin.Bool
 
 data Nat : Set where
   zero : Nat
@@ -9,4 +9,6 @@ zero + y = y
 (suc x) + y = suc (x + y)
 
 not : Bool → Bool
-not b = {!!}
+not false = true
+not true = false
+
