@@ -8,9 +8,11 @@ https://github.com/conal/Collaboration/blob/master/learning-agda.md
 
 Agda Book:
 https://github.com/jespercockx/agda-lecture-notes/blob/master/agda.pdf
+- 2023-03-27: page 006
+
+PLFA book:
+https://plfa.github.io/
 
 # Compiling Agda
 
 Compile command `cd agda --compile hello-world.agda --compile-dir=../build`
-
-I'm a purple todder dingus
