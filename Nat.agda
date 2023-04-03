@@ -19,15 +19,15 @@ data List (A : Set) : Set where
   _::_ : A → List A → List A
 infixr 5 _::_
 
+-- exercise 1.4 page 8
+
 length : {A : Set} → List A → Nat
 length [] = zero
 length (x :: y) = 1 + length y
 
 _++_ : {A : Set} → List A → List A → List
 x ++ [] = x
-x ++ (yFirst :: yRest) = (x :: yFirst) ++ yRest
--- x ++ y = (x :: y) ++ (y :: rest_of_y)
-
+(x :: xs) ++ y = x ∷ xs ++ s
 
 -- map : {A B : Set} → (A → B) → List A → List B
 
@@ -41,3 +41,4 @@ fst (x , y) = x
 
 snd : {A B : Set} → A × B → B
 snd (x , y) = y
+ 
