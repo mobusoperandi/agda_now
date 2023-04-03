@@ -25,7 +25,8 @@ length (x :: y) = 1 + length y
 
 _++_ : {A : Set} → List A → List A → List
 x ++ [] = x
-x ++ y = (x :: y) ++ (y :: rest_of_y)
+x ++ (yFirst :: yRest) = (x :: yFirst) ++ yRest
+-- x ++ y = (x :: y) ++ (y :: rest_of_y)
 
 
 -- map : {A B : Set} → (A → B) → List A → List B
