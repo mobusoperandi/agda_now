@@ -16,18 +16,18 @@ not true = false
 
 data List (A : Set) : Set where
   [] : List A
-  _::_ : A → List A → List A
-infixr 5 _::_
+  _∷_ : A → List A → List A
+infixr 5 _∷_
 
 -- exercise 1.4 page 8
 
 length : {A : Set} → List A → Nat
 length [] = zero
-length (x :: y) = 1 + length y
+length (x ∷ y) = 1 + length y
 
-_++_ : {A : Set} → List A → List A → List
+_++_ : {A : Set} → List A → List A → List A
 x ++ [] = x
-(x :: xs) ++ y = x ∷ xs ++ s
+y ++ (x ∷ xs) = x ∷ xs ++ y
 
 -- map : {A B : Set} → (A → B) → List A → List B
 
