@@ -21,9 +21,13 @@ infixr 5 _::_
 
 length : {A : Set} → List A → Nat
 length [] = zero
-length (x :: y) = suc(zero) + length y
+length (x :: y) = 1 + length y
 
--- _++_ : {A : Set} → List A → List A → List A
+_++_ : {A : Set} → List A → List A → List
+x ++ [] = x
+x ++ y = (x :: y) ++ (y :: rest_of_y)
+
+
 -- map : {A B : Set} → (A → B) → List A → List B
 
 
