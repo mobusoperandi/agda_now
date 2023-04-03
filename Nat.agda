@@ -27,7 +27,7 @@ length (x ∷ y) = 1 + length y
 
 _++_ : {A : Set} → List A → List A → List A
 x ++ [] = x
-y ++ (x ∷ xs) = x ∷ xs ++ y
+(x ∷ xs) ++ y = x :: xs ++ y
 
 -- map : {A B : Set} → (A → B) → List A → List B
 
