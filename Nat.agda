@@ -30,7 +30,9 @@ _++_ : {A : Set} → List A → List A → List A
 (x :: xs) ++ ys = x :: (xs ++ ys)
 infixr 5 _++_
 
--- map : {A B : Set} → (A → B) → List A → List B
+map : {A B : Set} → (A → B) → List A → List B
+map f [] = []
+map f (x :: xs) = f x :: map f xs
 
 data _×_ (A B : Set) : Set where
   _,_ : A → B → A × B
@@ -41,4 +43,3 @@ fst (x , y) = x
 
 snd : {A B : Set} → A × B → B
 snd (x , y) = y
-  
