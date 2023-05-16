@@ -76,3 +76,6 @@ infixr 5 _::_
 downFrom : (n : Nat) → Vec Nat n
 downFrom zero = []
 downFrom (suc x) = x :: downFrom x
+
+head : {A : Set}{n : Nat} → Vec A (suc n) → A
+head (x :: xs) = x
