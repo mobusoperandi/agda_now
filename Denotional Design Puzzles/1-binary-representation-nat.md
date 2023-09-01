@@ -56,3 +56,10 @@ prove the meaning between the specification and the implemention is precisely th
 
 ## Pseudo-code
 
+type B
+ true -> 1
+ false -> 0
+
+type B* Nat
+  (true, 1) -> 1
+  (false, 1) -> 0
